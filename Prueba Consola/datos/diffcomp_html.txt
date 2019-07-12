@@ -1,0 +1,9 @@
+                           title="Click to download Zorin-OS-15-Core-64-bit-r1.iso">
+                        <span class="name">Zorin-OS-15-Core-64-bit-r1.iso</span></a>
+                        <span class="name">Zorin-OS-15-Core-64-bit.iso</span></a>
+            <a class="button green big-text download with-sub-label extra-wide" href="/projects/zorin-os/files/latest/download <view-source:https://sourceforge.net/projects/zorin-os/files/latest/download>" title="/12/Zorin-OS-12.4-Core-64.iso: released on 2018-08-13 01:11:43 UTC">
+                <span class="sub-label">Zorin-OS-12.4-Core-64.iso (1.6 GB)</span>
+                           title="Click to download Zorin-OS-15-Core-64-bit.iso">
+                <tr title="Zorin-OS-15-Core-64-bit-r1.iso" class="file ">
+                    <th scope="row" headers="files_name_h"><a href="https://sourceforge.net/projects/zorin-os/files/15/Zorin-OS-15-Core-Beta-64-bit.iso/download <view-source:https://sourceforge.net/projects/zorin-os/files/15/Zorin-OS-15-Core-Beta-64-bit.iso/download>"
+                        <div class="stats show-for-medium"><a href="/projects/zorin-os/files/15/Zorin-OS-15-Core-64-bit.iso/stats/timeline <view-source:https://sourceforge.net/projects/zorin-os/files/15/Zorin-OS-15-Core-64-bit.iso/stats/timeline>" class="file" title="759 weekly downloads" rel="nofollow">

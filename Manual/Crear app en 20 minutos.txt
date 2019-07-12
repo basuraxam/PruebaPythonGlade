@@ -1,0 +1,31 @@
+https://www.ediciones-eni.com/open/mediabook.aspx?idR=07f7fec7dee1ee496a54bd1d84c75969
+
+
+Estoy usando Python 3.6, y estoy tratando de crear una ventana de aplicación desde un archivo xml de glade como este:
+
+builder = Gtk.Builder()
+builder.add_from_file("ui/window.glade")
+win = builder.get_object("window1")
+win.set_application(self)
+win.set_position(Gtk.WindowPosition.CENTER)
+win.show_all()
+
+Sin embargo, de esta manera, la ventana no conserva la barra de menú, que configuré en la aplicación do_startup, como esta:
+
+builder.add_from_file("ui/menu.glade")
+set_menubar(self.builder.get_object("menubar"))
+
+Sin embargo, si intento crear una ventana con esta clase:
+
+class MyWindow(Gtk.ApplicationWindow):
+
+def __init__(self, app):
+Gtk.Window.__init__(self, title="MyTitle", application=app)
+self.set_position(Gtk.WindowPosition.CENTER)
+self.set_default_size(600, 500)
+
+# application do_activate function
+win = MyWindow(self)
+win.show_all()
+
+Se muestra el menú. ¿Cómo puedo agregar el menú a la ventana creada desde Gtk.Builder? ¿Hay una mejor manera de lograr esto?
