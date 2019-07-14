@@ -8,7 +8,9 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 def onBotonClicked(builder):
-    print("Hola Mundo")
+    texto = eIdNom.get_text()
+    lIdRes.set_text("Hola %s" % texto)
+    print("Hola %s" % texto)
 
 def mainQuit(builder):
     Gtk.main_quit()
@@ -24,6 +26,8 @@ signals = { "on_boton1_clicked" : onBotonClicked,
 
 builder.connect_signals(signals)
 
+eIdNom = builder.get_object("eIdNombre")
+lIdRes = builder.get_object("lIdResultado")
 window = builder.get_object("window1")
 window.show_all()
 
