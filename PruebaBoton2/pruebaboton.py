@@ -2,23 +2,23 @@
 # -*- coding: utf-8 -*-
 
 
-
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 def onAnadirClicked(builder):
-#    texto = eIdNom.get_text()
+    texto = lText.get_text()
 #    lIdRes.set_text("Hola %s" % texto)
-#    model.append(["prueba"])
-    print("Añadir Texto")
+    lstWeb.append([texto,"masTxt5"])
+
+    print("Añadir ( %s ) Texto" % texto)
 
 def mainQuit(builder):
     Gtk.main_quit()
 
 
 builder = Gtk.Builder()
-builder.add_from_file("pruebaboton2.glade")
+builder.add_from_file("/home/sykey/Documentos/Python_Glade_GTK/PruebaBoton2/pruebaboton2.glade")
 
 
 signals = { "on_bAñadir_clicked" : onAnadirClicked,
@@ -27,13 +27,11 @@ signals = { "on_bAñadir_clicked" : onAnadirClicked,
 
 builder.connect_signals(signals)
 
-#eIdNom = builder.get_object("eIdNombre")
-#lIdRes = builder.get_object("lIdResultado")
+lText  = builder.get_object("lTexto")
+lstWeb = builder.get_object("liststore1")
 
-#model = Gtk.ListStore(str)
-#lstWeb = builder.get_object("listaweb")
-#lstWeb.
 window = builder.get_object("window1")
 window.show_all()
 
 Gtk.main()
+
